@@ -15,7 +15,8 @@ import {
   import { GitHubIcon, GoogleIcon, TwitterIcon } from './_components/ProvidersIcons'
 
 const LoginPage = () => {
-    return ( <Container maxW="md" py={{ base: '12', md: '24' }}>
+    return (
+       <Container maxW="md" py={{ base: '12', md: '24' }}>
     <Stack spacing="8">
       <Stack spacing="6">
         <Logo />

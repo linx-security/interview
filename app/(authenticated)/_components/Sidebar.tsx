@@ -28,12 +28,12 @@ const Sidebar = () => {
         </Stack>
         <NavGroup label="Integrations">
           <NavItem icon={<BiLink />} label="Connections" />
-          <NavItem icon={<BiBookContent />} label="Complience" />
+          <NavItem icon={<BiBookContent />} label="Compliance" />
         </NavGroup>
 
         <NavGroup label="Insights">
           <NavItem icon={<BiNews />} label="Reports" />
-          <NavItem icon={<BiAnalyse />} label="Automations" />
+          <NavItem icon={<BiAnalyse />} label="Automation" />
           <NavItem icon={<BiRuler />} label="Rules" />
         </NavGroup>
       </Stack>
