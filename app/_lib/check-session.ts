@@ -1,3 +1,3 @@
-export const checkSession = async  () => {
+export const checkSession = async () => {
   return true
 }

@@ -28,6 +28,5 @@
   },
   "license": "MIT",
   "keywords": [],
-  "description": "Sandbox Starter",
-  "packageManager": "yarn@3.6.1"
+  "description": "Linx Security - Frontend Exercise"
 }

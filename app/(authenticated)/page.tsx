@@ -1,13 +1,12 @@
-
-'use client';
-import { Box, Flex,  useColorModeValue as mode } from '@chakra-ui/react'
+'use client'
+import { Box, Flex, useColorModeValue as mode } from '@chakra-ui/react'
 import Sidebar from './_components/Sidebar'
-import {Metadata} from 'next'
- const App = () => {
+
+const App = () => {
   return (
     <Box height="100vh" overflow="hidden" position="relative">
       <Flex h="full" id="app-container">
-       <Sidebar />
+        <Sidebar />
         <Box bg={mode('#fafafa', 'gray.800')} flex="1" p="6">
           <Box
             w="full"
@@ -22,6 +21,6 @@ import {Metadata} from 'next'
   )
 }
 
-export default App;
+export default App
 
 
