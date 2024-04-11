@@ -5,7 +5,7 @@ Hi there!
 
 We hope that the process is going well for you so far.
 
-The task is designed to test your frontend experience, problem-solving skills attention to detail. 
+The task is designed to test your frontend experience, problem-solving skills and attention to detail. 
 
 
 ## Instructions
