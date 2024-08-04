@@ -1,4 +1,3 @@
-
 import {
   Menu,
   MenuDivider,
@@ -7,21 +6,32 @@ import {
   MenuList,
   MenuOptionGroup,
   Text,
-  useColorModeValue,
+  useColorModeValue
 } from '@chakra-ui/react'
-import  AccountSwitcherButton  from './AccountSwitcherButton'
+import AccountSwitcherButton from './AccountSwitcherButton'
+import { useSearchParams } from 'next/navigation'
 
 const AccountSwitcher = () => {
+  const searchParams = useSearchParams()
+
+  const email = searchParams.get('email')
+  const emailToRender = email || 'Chakra UI'
+
   return (
     <Menu>
-      <AccountSwitcherButton />
-      <MenuList shadow="lg" py="4" color={useColorModeValue('gray.600', 'gray.200')} px="3">
+      <AccountSwitcherButton email={emailToRender} />
+      <MenuList
+        shadow="lg"
+        py="4"
+        color={useColorModeValue('gray.600', 'gray.200')}
+        px="3"
+      >
         <Text fontWeight="medium" mb="2">
-          joe.biden@chakra-ui.com
+          {email || 'joe.biden@chakra-ui.com'}
         </Text>
         <MenuOptionGroup defaultValue="chakra-ui">
           <MenuItemOption value="chakra-ui" fontWeight="semibold" rounded="md">
-            Chakra UI
+            {emailToRender}
           </MenuItemOption>
           <MenuItemOption value="careerlyft" fontWeight="semibold" rounded="md">
             CareerLyft

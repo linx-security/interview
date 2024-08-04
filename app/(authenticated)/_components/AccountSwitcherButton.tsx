@@ -1,8 +1,19 @@
-import { Box, Flex, FlexProps, HStack, Img, useMenuButton } from '@chakra-ui/react'
+import {
+  Box,
+  Flex,
+  FlexProps,
+  HStack,
+  Img,
+  useMenuButton
+} from '@chakra-ui/react'
 import { HiSelector } from 'react-icons/hi'
 
-const AccountSwitcherButton = (props: FlexProps) => {
-  const buttonProps = useMenuButton(props)
+interface AccountSwitcherButtonProps extends FlexProps {
+  email: string
+}
+const AccountSwitcherButton = (props: AccountSwitcherButtonProps) => {
+  const { email, ...flexProps } = props
+  const buttonProps = useMenuButton(flexProps)
   return (
     <Flex
       as="button"
@@ -33,7 +44,7 @@ const AccountSwitcherButton = (props: FlexProps) => {
         />
         <Box textAlign="start">
           <Box noOfLines={1} fontWeight="semibold">
-            Chakra UI
+            {email}
           </Box>
           <Box fontSize="xs" color="gray.400">
             ID 123343
@@ -47,4 +58,4 @@ const AccountSwitcherButton = (props: FlexProps) => {
   )
 }
 
-export default AccountSwitcherButton;
+export default AccountSwitcherButton
