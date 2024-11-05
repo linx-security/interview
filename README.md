@@ -9,7 +9,7 @@ The task is designed to test your frontend experience, problem-solving skills an
 
 
 ## Instructions
-- The code consists of a minimal project using Next.js 13 and chakra-ui
+- The code consists of a minimal project using Next.js and chakra-ui
 - Clone the code to your local development environment
 - Run `yarn install` to install the dependencies and `yarn run dev` to start the dev server
 - You are allowed to use any documentation online
